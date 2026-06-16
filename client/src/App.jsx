@@ -4,6 +4,8 @@ import SideMenu from "./components/SideMenu";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import Hero from "./components/Hero";
+import About from "./components/About"
+import Location from "./components/Location";
 
 gsap.registerPlugin(useGSAP);
 
@@ -46,16 +48,17 @@ function App() {
 
   return (
     <div className="w-screen h-screen bg-gray-950 overflow-x-hidden">
-      <Navbar openMenu={() => setMenuOpen(true)} className="z-10" ref={navbar} />
-      <Hero />
-      <h1 className="text-white">hello world</h1>
-      <div className="w-full h-full flex justify-end">
+      <div className="w-full flex justify-end">
         <SideMenu
           className="sidemenu z-20 lg:hidden"
           closeMenu={() => setMenuOpen(false)}
           ref={sidemenu}
         />
       </div>
+      <Navbar openMenu={() => setMenuOpen(true)} className="z-10" ref={navbar} />
+      <Hero />
+      <About />
+      <Location />
     </div>
   );
 }
