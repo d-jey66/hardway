@@ -31,7 +31,7 @@ export default function Pricing() {
   }, { dependencies: [isStudent] })
   
   return (
-    <div className="w-full h-150 flex flex-col p-10 gap-5 items-center border-t-2 border-red-500">
+    <div className="w-full h-150 flex flex-col p-10 gap-5 items-center border-t-2 border-gray-900">
       <h1 className="text-3xl text-white font-black">ფასები</h1>
       <div className="flex flex-col gap-3">
         <div className="flex flex-row justify-between w-60 text-white font-semibold">
@@ -41,7 +41,7 @@ export default function Pricing() {
         <div className="bg-gray-900 w-60 rounded-full h-10 border-gray-800 border shadow-sm shadow-gray-900 p-1">
           <div className="rounded-full bg-yellow-300 h-full w-[30%] hover:cursor-pointer" onClick={() => setIsStudent(!isStudent)} ref={ageSwitch}></div>
         </div>
-        {isStudent && <p className="text-white">hello</p>}
+        {isStudent === true ? <p className="text-white">student 110gel</p> : <p className="text-white">adult 120gel</p>}
       </div>
     </div>
   );
