@@ -6,6 +6,7 @@ import { useGSAP } from "@gsap/react";
 import Hero from "./components/Hero";
 import About from "./components/About"
 import Location from "./components/Location";
+import Pricing from "./components/Pricing";
 
 gsap.registerPlugin(useGSAP);
 
@@ -59,6 +60,7 @@ function App() {
       <Hero />
       <About />
       <Location />
+      <Pricing />
     </div>
   );
 }
