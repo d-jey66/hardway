@@ -80,7 +80,7 @@ const SideMenu = forwardRef(({ className, closeMenu }, ref) => {
             <a
               key={label}
               href={href}
-              className="flex-1 flex flex-col items-center gap-1.5 py-3 rounded-xl bg-white/[0.04] hover:bg-white/[0.08] active:scale-95 transition-all border border-white/5"
+              className="flex-1 flex flex-col items-center gap-1.5 py-3 rounded-xl bg-white/4 hover:bg-white/8 active:scale-95 transition-all border border-white/5"
               aria-label={label}
             >
               {icon}
